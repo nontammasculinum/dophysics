@@ -91,7 +91,7 @@ int _rb_is_colliding(struct rigidbody rb, struct rigidbody rb2) {
 				  r = rb.collider.radius;
 			return x - r < x2 + z &&
 				   x + r > x2     &&
-				   y - r < y2 + z &&
+				   y - r < y2 + w &&
 				   y + r > y2; }
 		}
 	case AABB:
